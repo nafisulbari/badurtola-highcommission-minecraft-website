@@ -7,7 +7,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 
+import javax.xml.crypto.Data;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -27,7 +30,11 @@ public class IndexController {
         );
 
         model.addAttribute("menuItems", menuItems);
-        model.addAttribute("year", 2024);
+        Date today= new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
+        String currentYear = sdf.format(today);
+        String footerYearAndCredit = "© ".concat(currentYear).concat(", Badurtola HighCommission");
+        model.addAttribute("footerYearAndCredit", footerYearAndCredit);
 
         return "index"; // Name of the template without the .ftl extension coz mentioned in config
     }
