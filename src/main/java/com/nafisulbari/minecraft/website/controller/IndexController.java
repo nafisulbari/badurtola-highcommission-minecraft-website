@@ -27,8 +27,6 @@ public class IndexController {
         );
 
         model.addAttribute("menuItems", menuItems);
-        model.addAttribute("sectionTitle", "Introduction");
-        model.addAttribute("content", "This is a simple FreeMarker template example.");
         model.addAttribute("year", 2024);
 
         return "index"; // Name of the template without the .ftl extension coz mentioned in config
