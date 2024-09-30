@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
 import java.util.Optional;
 
 @Repository
@@ -16,8 +17,7 @@ public interface SiteVisitorRepository extends JpaRepository<SiteVisitor, Intege
 
     @Modifying
     @Transactional
-    @Query("UPDATE SiteVisitor s SET s.visitingCount = s.visitingCount + 1 WHERE s.ipAddress = :ipAddress")
-    void incrementVisitingCount(String ipAddress);
-
+    @Query("UPDATE SiteVisitor s SET s.visitingCount = s.visitingCount + 1, s.lastVisited = :today WHERE s.ipAddress = :ipAddress")
+    void updateVisitingCountAndLastVisited(String ipAddress, Date today);
 
 }

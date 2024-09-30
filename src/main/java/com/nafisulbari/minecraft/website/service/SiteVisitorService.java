@@ -22,7 +22,8 @@ public class SiteVisitorService {
 
         if (optionalSiteVisitor.isPresent()) {
             //might cause issues if unable to fetch ip
-            siteVisitorRepository.getSiteVisitorByIpAddress(ipAddress);
+            Date today = new Date();
+            siteVisitorRepository.updateVisitingCountAndLastVisited(ipAddress, today);
         } else {
             SiteVisitor siteVisitor = new SiteVisitor();
             siteVisitor.setIpAddress(ipAddress);
