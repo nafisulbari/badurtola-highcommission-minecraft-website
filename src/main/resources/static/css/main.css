@@ -408,6 +408,11 @@ footer {
 	padding-bottom: 66px;
 }
 
+.total-visitors {
+	color: green;
+	pointer-events: none;
+}
+
 .copyright-notice {
 	color: #7c8897;
 	margin: 0;

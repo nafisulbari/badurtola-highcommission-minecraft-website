@@ -5,6 +5,21 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HM944M83GN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-HM944M83GN');
+    </script>
+
     <title>Badurtola HighCommission - A Free Minecraft Server In Bangladesh</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -315,7 +330,13 @@
     <div class="footer">
         <div class="copyright-notice">
             <!-- !! Replace this with your own domain !! -->
-            <p th:text="${footerYearAndCredit}"></p>
+
+
+            <p><a class="total-visitors" th:text="${siteVisitorsDto.totalVisitors}"> </a> people visited this site</p>
+
+
+
+            <p th:text="'© ' + ${currentYear} + ', Badurtola HighCommission'"></p>
             <!-- If you want to, you're allowed to delete these credits. But if you want to support my work, please leave it. -->
             <p>Developed by <a target="_blank" href="https://nafisulbari.com/">nafisulbari</a>.</font></p>
         </div>
