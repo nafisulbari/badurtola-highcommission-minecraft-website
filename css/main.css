@@ -139,7 +139,7 @@ a:hover {
 /* End Navbar */
 
 #head {
-	background-image: url("../image/bh-cover-image2.jpg");
+	background-image: url("/image/bh-cover-image2.jpg");
 	margin: 0;
 	padding: 222px 0px 222px 0px;
 	text-align: center;
@@ -194,7 +194,7 @@ a:hover {
 }
 
 #banner {
-	background-image:  url("../image/banner-minecraft-survival.jpg");
+	background-image:  url("/image/banner-minecraft-survival.jpg");
 	padding: 75px 0px 75px 0px;
 	text-align: center;
 }
