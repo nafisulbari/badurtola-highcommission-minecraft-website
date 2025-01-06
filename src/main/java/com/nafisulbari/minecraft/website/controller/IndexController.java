@@ -29,11 +29,18 @@ public class IndexController {
         model.addAttribute("currentYear", currentYear);
 
         String ipAddress = "ip not found";
-        if (httpServletRequest != null) {
-            ipAddress = httpServletRequest.getHeader("X-FORWARDED-FOR");
-            if (ipAddress == null || "".equals(ipAddress)) {
-                ipAddress = httpServletRequest.getRemoteAddr();
+        try {
+
+            if (httpServletRequest != null) {
+                ipAddress = httpServletRequest.getHeader("X-FORWARDED-FOR");
+                if (ipAddress == null || "".equals(ipAddress)) {
+                    ipAddress = httpServletRequest.getRemoteAddr();
+                    System.out.println("Site visited by ip: " + ipAddress);
+                }
             }
+        }catch (IllegalArgumentException e) {
+            e.printStackTrace();
+            System.out.println("setting IP as ip not found");
         }
 
         SiteVisitorsDto siteVisitorsDto = siteVisitorService.generateSiteVisitors(ipAddress);
