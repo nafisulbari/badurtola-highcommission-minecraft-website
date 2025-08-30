@@ -45,6 +45,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
           integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <!-- Full Bootstrap CSS (instead of just grid) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 
 
     <!-- Favicons -->
@@ -80,7 +83,7 @@
         <a href="#about">About</a>
         <a href="#gamemodes">Gamemodes</a>
         <a href="#vote">Vote</a>
-        <a href="#staff">Staff</a>
+        <a href="#staff">Gallery</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 </div>
@@ -272,67 +275,145 @@
 
 <!-- Staff Section -->
 <section id="staff">
-    <h1>OUR HEROS</h1>
-    <p>Thank you guys for covering the server maintenance fees—your support is appreciated!</p>
+    <h1>IMAGE GALLERY</h1>
+    <p>A glimpse of our season 1 and community</p>
     <hr>
-    <!-- First Row Staff -->
-    <div class="row stafflist">
-        <!-- First Staff Member -->
-        <div class="col-md staffblock" onclick="onClickStaff('https://www.facebook.com/nafisulbari1')">
-            <img width="100px;" src="/image/staff/r47ul.png">
-            <h2>r47ul</h2>
-            <p>Admin</p>
-        </div>
-        <!-- End First Staff Member -->
 
-        <!-- Second Staff Member -->
-        <div class="col-md staffblock">
-            <img width="100px;" src="/image/staff/Captain.png"
-                 onclick="onClickStaff('https://www.facebook.com/faisal.sompad')">
-            <h2>Captain</h2>
-            <p>Brother</p>
+    <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/image/promote-s2/02.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/03.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/04.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/05.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/06.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/07.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/08.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/09.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/10.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/11.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/12.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/13.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/14.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/15.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/16.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/17.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/18.jpg" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/19.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/20.png" class="d-block w-100" alt="Gallery 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/image/promote-s2/21.png" class="d-block w-100" alt="Gallery 2">
+            </div>
         </div>
-        <!-- End Second Staf Member -->
 
-        <!-- Third Staff Member -->
-        <div class="col-md staffblock">
-            <img width="100px;" src="/image/staff/Abir01.png"
-                 onclick="onClickStaff('https://www.facebook.com/redounislam.abir')">
-            <h2>Abir01</h2>
-            <p>Friend</p>
-        </div>
-        <!-- End Third Staff Member -->
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-    <!-- End First Row Staff -->
+<!--    <h1>OUR HEROS</h1>-->
+<!--    <p>Thank you guys for covering the server maintenance fees—your support is appreciated!</p>-->
+<!--    <hr>-->
+<!--    &lt;!&ndash; First Row Staff &ndash;&gt;-->
+<!--    <div class="row stafflist">-->
+<!--        &lt;!&ndash; First Staff Member &ndash;&gt;-->
+<!--        <div class="col-md staffblock" onclick="onClickStaff('https://www.facebook.com/nafisulbari1')">-->
+<!--            <img width="100px;" src="/image/staff/r47ul.png">-->
+<!--            <h2>r47ul</h2>-->
+<!--            <p>Admin</p>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; End First Staff Member &ndash;&gt;-->
 
-    <!-- Second Row Staff Member -->
-    <div class="row stafflist">
-        <!-- Fourth Staff Member -->
-        <div class="col-md staffblock" onclick="onClickStaff('https://www.facebook.com/farukshekhbd')">
-            <img width="100px;" src="/image/staff/FaRuK.png">
-            <h2>FaRuK</h2>
-            <p>Friend</p>
-        </div>
-        <!-- End Fourth Staff Member -->
+<!--        &lt;!&ndash; Second Staff Member &ndash;&gt;-->
+<!--        <div class="col-md staffblock">-->
+<!--            <img width="100px;" src="/image/staff/Captain.png"-->
+<!--                 onclick="onClickStaff('https://www.facebook.com/faisal.sompad')">-->
+<!--            <h2>Captain</h2>-->
+<!--            <p>Brother</p>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; End Second Staf Member &ndash;&gt;-->
 
-        <!-- Fifth Staff Member -->
-        <div class="col-md staffblock"
-             onclick="onClickStaff('https://www.facebook.com/profile.php?id=100074881303705')">
-            <img width="100px;" src="/image/staff/70nm0y.png">
-            <h2>70nm0y</h2>
-            <p>Friend</p>
-        </div>
-        <!-- End Fifth Staff Member -->
+<!--        &lt;!&ndash; Third Staff Member &ndash;&gt;-->
+<!--        <div class="col-md staffblock">-->
+<!--            <img width="100px;" src="/image/staff/Abir01.png"-->
+<!--                 onclick="onClickStaff('https://www.facebook.com/redounislam.abir')">-->
+<!--            <h2>Abir01</h2>-->
+<!--            <p>Friend</p>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; End Third Staff Member &ndash;&gt;-->
+<!--    </div>-->
+<!--    &lt;!&ndash; End First Row Staff &ndash;&gt;-->
 
-        <!-- Sixth Staff Member -->
-        <div class="col-md staffblock">
-            <img width="100px;" src="/image/staff/common.png">
-            <h2>Pannu</h2>
-            <p>Noob</p>
-        </div>
-        <!-- End Sixth Staf Member -->
-    </div>
-    <!-- End Second Row Staff -->
+<!--    &lt;!&ndash; Second Row Staff Member &ndash;&gt;-->
+<!--    <div class="row stafflist">-->
+<!--        &lt;!&ndash; Fourth Staff Member &ndash;&gt;-->
+<!--        <div class="col-md staffblock" onclick="onClickStaff('https://www.facebook.com/farukshekhbd')">-->
+<!--            <img width="100px;" src="/image/staff/FaRuK.png">-->
+<!--            <h2>FaRuK</h2>-->
+<!--            <p>Friend</p>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; End Fourth Staff Member &ndash;&gt;-->
+
+<!--        &lt;!&ndash; Fifth Staff Member &ndash;&gt;-->
+<!--        <div class="col-md staffblock"-->
+<!--             onclick="onClickStaff('https://www.facebook.com/profile.php?id=100074881303705')">-->
+<!--            <img width="100px;" src="/image/staff/70nm0y.png">-->
+<!--            <h2>70nm0y</h2>-->
+<!--            <p>Friend</p>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; End Fifth Staff Member &ndash;&gt;-->
+
+<!--        &lt;!&ndash; Sixth Staff Member &ndash;&gt;-->
+<!--        <div class="col-md staffblock">-->
+<!--            <img width="100px;" src="/image/staff/common.png">-->
+<!--            <h2>Pannu</h2>-->
+<!--            <p>Noob</p>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; End Sixth Staf Member &ndash;&gt;-->
+<!--    </div>-->
+<!--    &lt;!&ndash; End Second Row Staff &ndash;&gt;-->
 </section>
 <!-- End Staff Section -->
 
@@ -348,14 +429,19 @@
 
             <p> © 2025, Badurtola HighCommission</p>
             <!-- If you want to, you're allowed to delete these credits. But if you want to support my work, please leave it. -->
-            <p>Developed by <a target="_blank" href="https://nafisulbari.com/">nafisulbari</a>.</font></p>
+<!--            <p>Developed by <a target="_blank" href="https://nafisulbari.com/">nafisulbari</a>.</font></p>-->
         </div>
     </div>
 </footer>
 <!-- End Footer -->
 
 <!-- Smooth Scrolling Script (from https://goo.gl/uWLqWu) | Do not touch if you don't know what you're doing! -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS (for carousel to work) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
         // Add smooth scrolling to all links
